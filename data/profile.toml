@@ -1,0 +1,151 @@
+# ─────────────────────────────────────────────────────────────
+#  profile.toml — the single source of truth for the whole README.
+#  Edit this file, run `python -m forge build`, everything regenerates:
+#  the SVG scenes, the orbit, the project graph, the README itself.
+# ─────────────────────────────────────────────────────────────
+
+[person]
+name     = "Prasoon Mishra"
+handle   = "iprsnmsra"
+tagline  = "I NEVER GIVE UP"
+kicker   = "// SYSTEMS · AGENTS · WORLDS"
+status   = "OPEN TO SOFTWARE ENGINEERING ROLES"
+roles    = ["SYSTEM DESIGN", "AGENTIC AI", "FULL-STACK", "GAME DEV"]
+quote    = "The code is the weapon. The keyboard is the battlefield."
+motto    = "Tough Time Makes You More Tough..!!"
+
+[links]
+portfolio = "https://iprsnmsra.vercel.app/"
+linkedin  = "https://www.linkedin.com/in/iprsnmsra"
+email     = "prasoonmishra9c@gmail.com"
+leetcode  = "https://leetcode.com/u/iprsnmsra/"
+
+# ── Terminal scene: type = cmd (typed) | out (instant) ───────
+[[terminal]]
+type = "cmd"
+text = "whoami"
+[[terminal]]
+type = "out"
+text = "prasoon mishra · builds systems, agents & worlds · vit bhopal"
+[[terminal]]
+type = "cmd"
+text = "cat focus.txt"
+[[terminal]]
+type = "out"
+text = "system design · ai solutions · agentic ai · full-stack · game dev"
+[[terminal]]
+type = "cmd"
+text = "ls stack/"
+[[terminal]]
+type = "out"
+text = "c++  java  python  c#  |  react  next  node  express  |  aws  devops  |  unity  unreal  blender"
+[[terminal]]
+type = "cmd"
+text = "cat wins.log"
+[[terminal]]
+type = "out"
+text = "3rd place HackSecure (Kestrel AI)  ·  EY Hackathon finalist, 200+ teams"
+[[terminal]]
+type = "cmd"
+text = "echo $MOTTO"
+[[terminal]]
+type = "out"
+text = "Tough Time Makes You More Tough..!!"
+
+# ── Featured projects. Tags drive the project × stack graph. ──
+# `blurb` is shown on the cards; stars/forks are pulled live by `forge sync`.
+[[project]]
+id       = "vigil"
+name     = "Vigil"
+repo     = "iprsnmsra/vigil"
+featured = true
+sub      = "self-healing CI/CD"
+blurb    = "Self-healing CI/CD platform. Canary rollback in 1.4 s, Gemini incident postmortems, LightGBM flaky-test quarantine (F1 0.9916)."
+tags     = ["Python", "Kubernetes", "Argo Rollouts", "Prometheus", "LightGBM", "Gemini", "GitHub Actions", "AI"]
+
+[[project]]
+id       = "kestrel"
+name     = "Kestrel AI"
+repo     = "iprsnmsra/KESTERAL-AI-Threat-Analyzer"
+demo     = "https://kestrel-ai-threat-analyzer.vercel.app/"
+featured = true
+sub      = "threat analysis"
+blurb    = "AI-powered threat analysis and deception platform. 3rd place at the HackSecure Hackathon."
+tags     = ["JavaScript", "HTML", "Vercel", "AI"]
+
+[[project]]
+id       = "animebill"
+name     = "AnimeBill"
+repo     = "iprsnmsra/AnimeBill"
+featured = true
+sub      = "e-bill generator"
+blurb    = "Every receipt hides a unique anime character sketch. Supabase auth + Postgres, CI on every push."
+tags     = ["JavaScript", "Supabase", "PostgreSQL", "Vercel", "GitHub Actions"]
+
+[[project]]
+id       = "tata"
+name     = "Tata Capital Agent"
+featured = false
+sub      = "EY finalist"
+blurb    = "Agentic financial assistant prototype. EY Hackathon finalist among 200+ teams."
+tags     = ["Agentic AI", "AI"]
+
+# ── Skill orbit. Rings go inner → outer. primary = named in your bio. ──
+[[ring]]
+name   = "CORE CS"
+color  = "a2"
+skills = [ {name="DSA", primary=true}, {name="OS", primary=true}, {name="Compilers"}, {name="SQL"} ]
+
+[[ring]]
+name   = "LANGUAGES"
+color  = "accent"
+skills = [ {name="C++", primary=true}, {name="Java", primary=true}, {name="Python", primary=true}, {name="C#"} ]
+
+[[ring]]
+name   = "WEB"
+color  = "violet"
+skills = [ {name="React"}, {name="Next.js"}, {name="Node.js"}, {name="Express"} ]
+
+[[ring]]
+name   = "AI"
+color  = "pink"
+skills = [ {name="LLMs"}, {name="Agentic AI"}, {name="AI Solutions"}, {name="System Design"} ]
+
+[[ring]]
+name   = "CLOUD"
+color  = "warm"
+skills = [ {name="AWS"}, {name="DevOps"}, {name="APIs"} ]
+
+[[ring]]
+name   = "GAMES"
+color  = "teal"
+skills = [ {name="Unity"}, {name="Unreal"}, {name="Blender"}, {name="Storytelling"} ]
+
+# ── Proof. Everything here is also on the portfolio site. ──
+[[signal]]
+title  = "HackSecure Hackathon"
+detail = "3rd place · Kestrel AI"
+
+[[signal]]
+title  = "EY Hackathon"
+detail = "Finalist · 200+ teams · Tata Capital agent"
+
+[[signal]]
+title  = "Google Gemini Student Ambassador"
+detail = "Since Jul 2026"
+
+[[signal]]
+title  = "HackerRank Campus Ambassador"
+detail = "VIT Bhopal · 2024"
+
+[[signal]]
+title  = "MERN Stack Club Lead"
+detail = "VIT Bhopal · 2024"
+
+[[signal]]
+title  = "AWS AI Practitioner"
+detail = "Certified · 2024"
+
+[[signal]]
+title  = "500+ DSA problems"
+detail = "Codeforces · CodeChef · LeetCode · HackerRank"
